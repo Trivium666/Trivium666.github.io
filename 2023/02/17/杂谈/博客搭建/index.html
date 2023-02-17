@@ -357,7 +357,7 @@ Notion、语雀、Obsidian等笔记软件，选择博客的方式建立知识库
 <h2 id="3-搭建思路">3. 搭建思路</h2>
 <p>搭建思路如图所示：</p>
 <pre class="mermaid">flowchart TB
-id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Nood.js 中的 npm package"--> id2["本地 html 文件"] --"Git Bash 同步" --> id4["Github 仓库"] --"Github Pages 生成网站" --> 在线博客</pre>
+id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Node.js 中的 npm package"--> id2["本地 html 文件"] --"Git Bash 同步" --> id4["Github 仓库"] --"Github Pages 生成网站" --> 在线博客</pre>
 <h2 id="4-搭建过程">4. 搭建过程</h2>
 <ol type="1">
 <li>安装以下 Package：
@@ -437,6 +437,9 @@ id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Nood.js 中�
 <script type="text/javascript"> 
 	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 </script>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
+    </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
