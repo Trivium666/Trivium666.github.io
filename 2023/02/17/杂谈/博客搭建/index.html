@@ -341,18 +341,20 @@ var _hmt = _hmt || [];
 <p>知识库应该满足以下几点要求：</p>
 <ul>
 <li>不依赖第三方软件 → 遂放弃使用
-Notion、语雀、Obsidian等笔记软件，选择博客的方式建立知识库</li>
-<li>不需要维护服务器 → 遂放弃使用 Docsify、DokuWiki、Gitbook 等 Wiki
-系统，以 Github 作为服务器进行部署</li>
-<li>不需要过多的编程知识，遂选择基于 Nood.js 的 Hexo 静态博客生成器</li>
+<code>Notion</code>、<code>语雀</code>、<code>Obsidian</code>等笔记软件，选择博客的方式建立知识库</li>
+<li>不需要维护服务器 → 遂放弃使用
+<code>Docsify</code>、<code>DokuWiki</code>、<code>Gitbook</code> 等
+Wiki 系统，以 <code>Github</code> 作为服务器进行部署</li>
+<li>不需要过多的编程知识 → 遂选择基于 <code>Nood.js</code> 的 Hexo
+静态博客生成器</li>
 <li>不需要花里胡哨的布局 → 遂选择 Tree 主题进行创建</li>
 </ul>
 <h2 id="2-博客特点">2. 博客特点</h2>
 <ul>
-<li>基于 Markdown 写作</li>
-<li>基于 Pandoc 渲染</li>
-<li>支持 Latex 数学公式</li>
-<li>支持 Mermaid 图表</li>
+<li>基于 <code>Markdown</code> 写作</li>
+<li>基于 <code>Pandoc</code> 渲染</li>
+<li>支持 <code>Latex</code> 数学公式</li>
+<li>支持 <code>Mermaid</code> 图表</li>
 </ul>
 <h2 id="3-搭建思路">3. 搭建思路</h2>
 <p>搭建思路如图所示：</p>
@@ -362,38 +364,54 @@ id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Node.js 中�
 <ol type="1">
 <li>安装以下 Package：
 <ul>
-<li>Git</li>
-<li>Pandoc</li>
-<li>Node.js
+<li><code>Git</code></li>
+<li><code>Pandoc</code></li>
+<li><code>Node.js</code>
 <ul>
-<li>npm</li>
-<li>hexo</li>
+<li><code>npm</code></li>
+<li><code>hexo</code></li>
 </ul></li>
 </ul></li>
 <li>通过邮箱免费申请 Github 账号
 <ul>
-<li>创建和用户名相同的仓库（Repository）：Github用户名.github.io</li>
-<li>生成 ssh Key</li>
+<li>创建和用户名相同的仓库（Repository）：<code>Github用户名.github.io</code></li>
+<li>生成 <code>ssh Key</code></li>
 <li>在 Github 添加生成的 ssh Key</li>
 </ul></li>
 <li>使用 Hexo Tree 主题
 <ul>
-<li>删除主题自带的 hexo-renderer-marked</li>
+<li>删除主题自带的 <code>hexo-renderer-marked</code></li>
 <li>安装插件
 <ul>
-<li>hexo-renderer-pandoc</li>
-<li>hexo-math</li>
-<li>hexo-filter-mermaid-diagrams</li>
+<li><code>hexo-renderer-pandoc</code></li>
+<li><code>hexo-math</code></li>
+<li><code>hexo-filter-mermaid-diagrams</code></li>
 </ul></li>
-<li>配置根目录和主题目录中的 _config.yaml 文件</li>
+<li>配置根目录和主题目录中的 <code>_config.yaml</code> 文件</li>
 </ul></li>
 <li>发布文章
 <ul>
-<li>.md 文件保存至根目录下的 source/_posts 文件夹</li>
-<li>hexo g 生成博客框架</li>
-<li>hexo d 部署至服务器</li>
+<li><code>.md</code> 文件保存至根目录下的 <code>source/_posts</code>
+文件夹</li>
+<li><code>hexo g</code> 生成博客框架</li>
+<li><code>hexo d</code> 部署至服务器</li>
 </ul></li>
 </ol>
+<h2 id="5-不足之处">5. 不足之处</h2>
+<p>本博客依然存在许多不足：</p>
+<ul>
+<li>二级目录中的 Markdown 文章不提供侧边栏目录展示功能</li>
+<li>全站搜索仅支持标题搜索，无法搜索单个文档中的关键字</li>
+<li>Latex 无法像正常 Markdown 语法一样使用 <code>$$</code>
+渲染数学公式，需要把美元符号换成标签符
+<code>&#123;% mathjax&#125; &#123;% endmathjax%&#125;</code></li>
+<li>数学公式和正文之间的间距无法自动适配，需要额外加入两行空格</li>
+<li>Mermaid 需要在 Front Matter 中手动开启：
+<pre class="mermaid">: true</pre></li>
+<li>Mermaid 图表需要二次刷新才能正常显示</li>
+</ul>
+<h2 id="6-总结">6. 总结</h2>
+<p>尽管依然存在诸多不足，但是对于我这种零基础的前端小白而言，目前的博客作为知识库是绝对够用了。需时刻谨记，搭建博客的目的是为了更好地输出创作内容，而非博客形式本身。</p>
 
 </div>
 
@@ -437,9 +455,6 @@ id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Node.js 中�
 <script type="text/javascript"> 
 	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 </script>
-
-  <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
-    </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
