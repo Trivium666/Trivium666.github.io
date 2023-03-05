@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		半导体工厂MES系统介绍 | 
+		半导体车间MES系统介绍 | 
 	 
 	LE-Wiki
 	</title>
@@ -268,9 +268,9 @@ var _hmt = _hmt || [];
 									
 							<ul>
 								<li class="file">
-									<a href="/2023/02/25/04-Python/!%5BInbox%5D%20%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+									<a href="/2023/02/25/04-Python/!%5BInbox%5D%20%E9%93%BE%E6%8E%A5/">
                      
-										    ![Inbox] 链接汇总
+										    ![Inbox] 链接
                      
 									</a>
 								</li>
@@ -387,7 +387,7 @@ var _hmt = _hmt || [];
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-	半导体工厂MES系统介绍
+	半导体车间MES系统介绍
 </h1>
 <div class="article-meta">
 	
@@ -408,17 +408,78 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p>test</p>
-<p>Recipe</p>
-<p>Recipe 是机器的指令，用来告诉人们如何操作或生产。Recipe
-以字符串的形式储存，且具有唯一性</p>
-<p>Recipe Master</p>
-<p>Recipe Matrix</p>
-<p>Spec</p>
-<p>Camstar<br />
-Supplier of MES system</p>
-<p>MES<br />
-Manufacturing Execution System</p>
+	<h2 id="1-什么是-mes-系统">1. 什么是 MES 系统</h2>
+<p>MES 是 Manufacturing Execution System 的简称，即制造执行系统。MES
+通过信息的传递，对从订单下达到产品完成的整个生产过程进行优化管理，对工厂发生的实时事件及时作出相应的反应和报告，并使用当前的准确数据对进行指导和处理。</p>
+<h2 id="2-mes-系统的应用对象">2. MES 系统的应用对象</h2>
+<p>MES 系统面向车间，重点关注如何高效地执行制造以及处理订单。MES
+系统面向的对象可以细分为以下几部分：</p>
+<ul>
+<li>人</li>
+<li>机器</li>
+<li>物料（Material）</li>
+<li>方法</li>
+<li>环境</li>
+<li>测试</li>
+</ul>
+<p>以半导体车间为例，可以具体分为：</p>
+<ul>
+<li>测试人员（Test Operator）</li>
+<li>测试仪器（Test Equipment）</li>
+<li>被测器件（Device under Test）</li>
+<li>测试规格（Test Specification）</li>
+<li>测试程序（Test Program）</li>
+<li>测试结果（Test Results）</li>
+</ul>
+<h2 id="3-mes-系统的组成与功能">3. MES 系统的组成与功能</h2>
+<p>MES 系统主要分为四大类：</p>
+<ul>
+<li>生产管理
+<ul>
+<li>计划排程</li>
+<li>生产调度</li>
+<li>工艺管理</li>
+</ul></li>
+<li>物料管理
+<ul>
+<li>批次管理</li>
+<li>包装管理</li>
+<li>配送</li>
+</ul></li>
+<li>质量管理
+<ul>
+<li>品质管理</li>
+<li>质量控制分析</li>
+<li>Fail 管理</li>
+</ul></li>
+<li>维护管理
+<ul>
+<li>数据采集</li>
+<li>状态实时监控</li>
+<li>维修过程管理</li>
+<li>定期维护</li>
+</ul></li>
+</ul>
+<h2 id="4-为什么用-mes-系统">4. 为什么用 MES 系统</h2>
+<p>MES 系统是现代智能工厂不可或缺的一环。它摒弃了原始的人工记录报表或者
+Excel
+表格储存信息的方式，而使用一种全新的实时系统来检测数据。使用<strong>条形码</strong>对每一个仪器、产品和装配组件进行追踪，确保及时获取数据和反应问题。还是以半导体车间的
+Final Test
+为例，每条产线上都有特定的测试仪器，用以特定测试的执行，如：</p>
+<ul>
+<li>静态测试</li>
+<li>动态测试</li>
+<li>绝缘测试</li>
+<li>BIPSS</li>
+</ul>
+<p>对于每一种产品，都应该有相应的配套设备：</p>
+<ul>
+<li>测试板（Adapter）</li>
+<li>门极电阻 / 钳位插头（RG- / Clamping Plug）</li>
+<li>工件载体（Workpiece Carrier）</li>
+<li>测试结束后用于装器件的托盘（Tray）</li>
+</ul>
+<p>仪器和产品之间需要特定的测试程序进行连接，被称为产品的配方（Recipe）。</p>
 
 </div>
 
