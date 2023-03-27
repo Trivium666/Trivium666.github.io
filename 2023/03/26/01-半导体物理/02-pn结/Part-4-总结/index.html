@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		博客搭建 | 
+		Part-4-总结 | 
 	 
 	LE-Wiki
 	</title>
@@ -263,7 +263,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2023/03/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/Part-4-%E6%80%BB%E7%BB%93/">
                      
 										    Part-4-总结
@@ -333,7 +333,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file active">
+								<li class="file">
 									<a href="/2023/02/17/%E6%9D%82%E8%B0%88/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
                      
 										    博客搭建
@@ -420,12 +420,12 @@ var _hmt = _hmt || [];
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-	博客搭建
+	Part-4-总结
 </h1>
 <div class="article-meta">
 	
 	<span>Bo Zhang</span>
-	<span>2023-02-17 17:00:00</span>
+	<span>2023-03-26 12:12:26</span>
 		<div id="article-categories">
     
 		<span>Categories：</span>
@@ -441,86 +441,43 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<h2 id="1-动机">1. 动机</h2>
-<p>自工作以后，公司的两点企业文化对我的影响很大，分别是：</p>
-<ul>
-<li>Lifelong Learning</li>
-<li>Learning by Doing</li>
-</ul>
-<p>基于以上两点，有必要建立一个知识库，便于随时记录工作和学习中的一些感想。</p>
-<p>知识库应该满足以下几点要求：</p>
-<ul>
-<li>不依赖第三方软件 → 遂放弃使用
-<code>Notion</code>、<code>语雀</code>、<code>Obsidian</code>等笔记软件，选择博客的方式建立知识库</li>
-<li>不需要额外维护服务器 → 遂放弃使用
-<code>Docsify</code>、<code>DokuWiki</code>、<code>Gitbook</code> 等
-Wiki 系统，以 <code>Github</code> 作为服务器进行部署</li>
-<li>不需要过多的编程知识 → 遂选择基于 <code>Nood.js</code> 的 Hexo
-静态博客生成器</li>
-<li>不需要花里胡哨的布局 → 遂选择 Tree 主题进行创建</li>
-</ul>
-<h2 id="2-博客特点">2. 博客特点</h2>
-<ul>
-<li>基于 <code>Markdown</code> 写作</li>
-<li>基于 <code>Pandoc</code> 渲染</li>
-<li>支持 <code>Latex</code> 数学公式</li>
-<li>支持 <code>Mermaid</code> 图表</li>
-</ul>
-<h2 id="3-搭建思路">3. 搭建思路</h2>
-<p>搭建思路如图所示：</p>
+	<p>本篇对 pn 结所有的知识点做一个串联，如下图所示：<br />
+<font color=crimson>*如果图片无法显示，请刷新页面</font></p>
 <pre class="mermaid">flowchart TB
-id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Node.js 中的 npm package"--> id2["本地 html 文件"] --"Git Bash 同步" --> id4["Github 仓库"] --"Github Pages 生成网站" --> 在线博客</pre>
-<h2 id="4-搭建过程">4. 搭建过程</h2>
-<ol type="1">
-<li>安装以下 Package：
-<ul>
-<li><code>Git</code></li>
-<li><code>Pandoc</code></li>
-<li><code>Node.js</code>
-<ul>
-<li><code>npm</code></li>
-<li><code>hexo</code></li>
-</ul></li>
-</ul></li>
-<li>通过邮箱免费申请 Github 账号
-<ul>
-<li>创建和用户名相同的仓库（Repository）：<code>Github用户名.github.io</code></li>
-<li>生成 <code>ssh Key</code></li>
-<li>在 Github 添加生成的 ssh Key</li>
-</ul></li>
-<li>使用 Hexo Tree 主题
-<ul>
-<li>删除主题自带的 <code>hexo-renderer-marked</code></li>
-<li>安装插件
-<ul>
-<li><code>hexo-renderer-pandoc</code></li>
-<li><code>hexo-math</code></li>
-<li><code>hexo-filter-mermaid-diagrams</code></li>
-</ul></li>
-<li>配置根目录和主题目录中的 <code>_config.yaml</code> 文件</li>
-</ul></li>
-<li>发布文章
-<ul>
-<li><code>.md</code> 文件保存至根目录下的 <code>source/_posts</code>
-文件夹</li>
-<li><code>hexo g</code> 生成博客框架</li>
-<li><code>hexo d</code> 部署至服务器</li>
-</ul></li>
-</ol>
-<h2 id="5-不足之处">5. 不足之处</h2>
-<p>本博客依然存在许多不足：</p>
-<ul>
-<li>二级目录中的 Markdown 文章不提供侧边栏目录展示功能</li>
-<li>全站搜索仅支持标题搜索，无法搜索单个文档中的关键字</li>
-<li>Latex 无法像正常 Markdown 语法一样使用 <code>$$</code>
-渲染数学公式，需要把美元符号换成标签符
-<code>&#123;% mathjax&#125; &#123;% endmathjax%&#125;</code></li>
-<li>数学公式和正文之间的间距无法自动适配，需要额外加入两行空格</li>
-<li>Mermaid 需要在 Front Matter 中手动开启</li>
-<li>Mermaid 图表需要二次刷新才能正常显示</li>
-</ul>
-<h2 id="6-总结">6. 总结</h2>
-<p>尽管依然存在诸多不足，但是对于我这种零基础的前端小白而言，目前的博客作为知识库是绝对够用了。需时刻谨记，搭建博客的目的是为了更好地输出创作内容，而非博客形式本身。</p>
+
+subgraph 零偏
+direction TB
+中性区多子扩散 --> 空间载荷区形成 --"pn 结能带图"--> 内建电压 --> 空间载荷区宽度
+end
+
+subgraph 正偏
+direction TB
+少子浓度 --> 少子电流密度 --> id["理想 V-I 特性"]
+end
+
+subgraph 反偏
+direction TB
+    subgraph 空间载荷区
+    direction TB
+    杂质电离 --> id2["SRH 复合"]
+    end
+    subgraph 高场强
+    direction TB
+    碰撞电离 --> 载流子迁移率
+    end
+end
+
+subgraph 反向漏电流
+direction TB
+击穿条件 --倍增因子无限大--> 临界场强 --三角形电场分布--> 击穿电压
+击穿条件 --连续性方程--> 临界场强
+击穿条件 --泊松方程--> 临界场强
+end
+
+零偏 --中性区少子扩散--> 正偏 --反向饱和电流密度--> 反向漏电流
+反偏--载荷区的产生--> 反向漏电流
+反偏 --雪崩倍增--> 反向漏电流
+零偏 --中性区多子抽出--> 反偏</pre>
 
 </div>
 
@@ -528,16 +485,11 @@ id1["Markdown 编辑器"]--"Markdown 文件"--> 本地文件夹 --"Node.js 中�
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/2023/02/17/%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%B7%A5%E5%8E%82MES%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  半导体车间MES系统介绍
-              </a>
-            
         </div>
         <div class="item right">
             
-              <a href="/2023/02/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
-                半导体物理链接汇总
+              <a href="/2023/03/17/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/Part-3-%E5%8F%8D%E5%81%8F/">
+                Part-3-反偏
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
