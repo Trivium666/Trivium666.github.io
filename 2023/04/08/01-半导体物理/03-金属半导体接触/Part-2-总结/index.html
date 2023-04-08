@@ -8,6 +8,8 @@
 	<!-- title -->
 	
 	<title>
+	
+		Part-2-总结 | 
 	 
 	LE-Wiki
 	</title>
@@ -305,7 +307,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2023/04/08/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/Part-2-%E6%80%BB%E7%BB%93/">
                      
 										    Part-2-总结
@@ -461,90 +463,90 @@ var _hmt = _hmt || [];
 
 	<!-- 引入正文 -->
 	<div id="content">
-		<div id="index">
+		<h1 id="article-title">
+	Part-2-总结
+</h1>
+<div class="article-meta">
 	
-		<div class="index-li">
-			<a href="/2021/02/21/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/hello-world/">
-				<h2 class="index-title">
-					Hello World
-				</h2>
-				<div class="index-brief">
-					Welcome to Hexo! This is your very
-first post. Check documentation for
-more info. If you get any problems when using Hexo, you can find the
-answer 
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-02-21</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/02/21/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Latex%20Test/">
-				<h2 class="index-title">
-					HEXO显示Latex公式
-				</h2>
-				<div class="index-brief">
-					Latex
+	<span>Bo Zhang</span>
+	<span>2023-04-08 15:34:11</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+    
 
+    
+		<span>Tags：</span>
+            
+    
+		</div>
 
-
-
-The following provides a quick reference to the most commonly used
-Markdown syntax.
-Latex Equation
-Inline equation: 
-Display equati
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-02-21</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2021/02/21/%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Markdown%20Test/">
-				<h2 class="index-title">
-					HEXO显示Markdown语法
-				</h2>
-				<div class="index-brief">
-					Markdown
-The following provides a quick reference to the most commonly used
-Markdown syntax.
-Headers
-H3
-H4
-H5
-H6
-Emphasis
-Italic and Bold
-Sc
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2021-02-21</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-	
-	<div id="index-paginator">
-		
-	</div>
 </div>
 
+<div id="article-content">
+	<p>本章知识点框架如图所示：<br />
+<font color=crimson>*如果图片无法显示，请刷新页面</font></p>
+<pre class="mermaid">flowchart TB
+
+    subgraph 零偏
+    direction TB
+
+        subgraph A[电子热发射理论]
+        direction TB
+        功函数 --> 电子亲合能 & 半导体电势 & 金属电势
+        end
+
+        subgraph B["金属 — 半导体接触"]
+        direction TB
+        接触前不同的费米能级 --接触后半导体费米能级下降--> 电子从半导体流向金属 --> 空间载荷区形成
+        end
+    
+    A --金属电势高于半导体--> B
+    end    
+
+    subgraph 正偏
+    direction TB
+
+        subgraph C[势垒]
+        direction TB
+        金属 --> 肖特基势垒 --高场强时势垒减小 --> 镜像力 
+        半导体 --> 接触势垒 --> 内建电压
+        end
+
+    玻尔兹曼近似 --"类比 pn 结"--> 理想伏安特性 --有效理查德森常数--> 反向饱和电流密度 
+    镜像力 --肖特基效应--> 反向饱和电流密度
+    多子漂移 --> 外延电阻  --> 漂移电压 --> 正向压降
+    内建电压 --> 正向压降
+    end
+零偏 --> 正偏</pre>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/04/07/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/Part-1-%E8%82%96%E7%89%B9%E5%9F%BA%E7%BB%93/">
+                Part-3-反偏
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+ 
+
+
+
+<script>
+	
+	
+</script>
 	</div>
 	<div id="footer">
 	<p>
@@ -561,6 +563,9 @@ Sc
 <script type="text/javascript"> 
 	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 </script>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
+    </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
