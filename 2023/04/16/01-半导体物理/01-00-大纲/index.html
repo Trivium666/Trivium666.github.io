@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		01-04-Part-3-总结 | 
+		半导体物理大纲 | 
 	 
 	LE-Wiki
 	</title>
@@ -146,7 +146,7 @@ var _hmt = _hmt || [];
 									</a>
 									
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E5%A4%A7%E7%BA%B2/">
                      
 										    01-00-大纲
@@ -384,7 +384,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file active">
+								<li class="file">
 									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P3-%E6%80%BB%E7%BB%93/">
                      
 										    01-04-P3-总结
@@ -541,12 +541,12 @@ var _hmt = _hmt || [];
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-	01-04-Part-3-总结
+	半导体物理大纲
 </h1>
 <div class="article-meta">
 	
 	<span>Bo Zhang</span>
-	<span>2023-04-16 10:37:10</span>
+	<span>2023-04-16 19:39:30</span>
 		<div id="article-categories">
     
 		<span>Categories：</span>
@@ -562,55 +562,28 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p>本章知识点框架如图所示：<br />
+	<p>半导体物理的知识大纲如下图所示：<br />
 <font color=crimson>*如果图片无法显示，请刷新页面</font></p>
 <pre class="mermaid">flowchart TB
 
-    subgraph F[氧化物 - 半导体界面]
+    subgraph AA[半导体材料]
     direction TB
-
-        subgraph A[半导体表面态]
-        direction TB
-        外部电压 --表面势--> J[半导体表面能带]
-        J --多子积累--> 积累
-        J --表面势为 0--> 平带
-        J --空间载荷区--> 耗尽
-        J --反型层--> 弱反
-        J --阈值电压--> 强反
-        强反 --电压快速上升--> 深耗尽
-        end
-
-        subgraph B[半导体表面]
-        direction TB
-            subgraph 界面缺陷
-            施主电离浓度 & 受主电离浓度
-            end
-        多子浓度 & 少子浓度 & 施主电离浓度 & 受主电离浓度 --> 体电荷密度 --> 表面场强 --> 表面电荷 --表面势--> 表面电容
-        
-        end
-    
-    A --泊松方程--> B 
-    表面电容--串联氧化物电容--> C["理想 C-V 曲线"] --> 低频交流信号 & 高频交流信号 & D["快速扫描（深耗尽）"]
-
-    end    
-
-    subgraph G[非理想因素]
-    direction TB
-        
-        subgraph E[氧化层缺陷]
-        direction TB
-        固定类电荷 --> 界面陷阱电荷 & 氧化层陷阱电荷 & 固定电荷
-        移动类电荷 --> 可动离子电荷     
-        end
-        
-        subgraph H[金属和半导体材料]
-        direction TB
-        功函数差异
-        end    
-    氧化层陷阱电荷 & 固定电荷 & 可动离子电荷 & 功函数差异 --> 额外的平带电压 --"理想 C-V 曲线平移"--> I
-    界面陷阱电荷 --"理想 C-V 曲线畸变"--> I["实际 C-V 曲线"] 
+    BB[本征] & CC["p 型"] & DD["n 型"] --> EE[能带图] --> FF[载流子浓度] --> GG[热平衡态] & HH[非平衡态]
+    GG --> II[漂移运动] & JJ[扩散运动] --> KK[输运方程]
+    HH --> LL[产生与复合] --> MM[载流子寿命]
+    FF --> 体电荷密度 --> OO
+    MM & KK & OO[泊松方程] --> NN[连续性方程]
     end
-F --> G</pre>
+
+    subgraph A[接触类型]
+    direction TB
+    B["半导体—半导体"] & C["金属—半导体"] & D["金属—氧化物—半导体"]
+    B --> E["pn 结"]
+    C --> F[肖特基结] & G[欧姆接触]
+    E & F --> I["I-V 特性"]
+    D --> H["MOS 结构"] --> J["C-V 特性"]
+    end
+AA --> A</pre>
 
 </div>
 
@@ -618,16 +591,11 @@ F --> G</pre>
     <div class="post-guide">
         <div class="item left">
             
-              <a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E5%A4%A7%E7%BA%B2/">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  半导体物理大纲
-              </a>
-            
         </div>
         <div class="item right">
             
-              <a href="/2023/04/15/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P2-%E9%9D%9E%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
-                01-04-Part-2-非理想 MOS 电容
+              <a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P3-%E6%80%BB%E7%BB%93/">
+                01-04-Part-3-总结
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
