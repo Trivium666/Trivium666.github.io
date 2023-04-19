@@ -8,8 +8,6 @@
 	<!-- title -->
 	
 	<title>
-	
-		01-02-Part-4-总结 | 
 	 
 	LE-Wiki
 	</title>
@@ -285,7 +283,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file active">
+								<li class="file">
 									<a href="/2023/03/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P4-%E6%80%BB%E7%BB%93/">
                      
 										    01-02-P4-总结
@@ -573,97 +571,38 @@ var _hmt = _hmt || [];
 
 	<!-- 引入正文 -->
 	<div id="content">
-		<h1 id="article-title">
-	01-02-Part-4-总结
-</h1>
-<div class="article-meta">
+		<div id="index">
 	
-	<span>Bo Zhang</span>
-	<span>2023-03-26 12:12:26</span>
-		<div id="article-categories">
-    
-		<span>Categories：</span>
-            
-    
-
-    
-		<span>Tags：</span>
-            
-    
-		</div>
-
+		<div class="index-li">
+			<a href="/2023/04/01/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P0-%E6%A6%82%E8%BF%B0/">
+				<h2 class="index-title">
+					01-03-Part 0 - 概述
+				</h2>
+				<div class="index-brief">
+					1. 序言
+在前面的内容中我们讨论了 pn
+结的各种特性，这是由同一种半导体材料组成的（比如硅），被称为同质结（Homojunction）。除此以外还有不同材料的两块半导体形成的异质结（Heterojunction），如砷化镓和硅形成的
+pn
+结。另外，金属和半导体接触也可以构成结，称为肖特
+					...
+				</div>
+			</a>
+                <div class="article-meta">
+				    <span>2023-04-01</span>
+                    
+                            
+                    
+                </div>
+		</div>	
+	
+	
+	<div id="index-paginator">
+		
+			<a class="extend prev" rel="prev" href="/archives/2023/04/">&lt;</a><a class="page-number" href="/archives/2023/04/">1</a><span class="page-number current">2</span>
+		
+	</div>
 </div>
 
-<div id="article-content">
-	<p>本篇对 pn 结所有的知识点做一个串联，如下图所示：<br />
-<font color=crimson>*如果图片无法显示，请刷新页面</font></p>
-<pre class="mermaid">flowchart TB
-
-subgraph 零偏
-direction TB
-中性区多子扩散 --> 空间载荷区形成 --"pn 结能带图"--> 内建电压 --> 空间载荷区宽度
-end
-
-subgraph 正偏
-direction TB
-少子浓度 --> 少子电流密度 --> id["理想 V-I 特性"]
-end
-
-subgraph 反偏
-direction TB
-    subgraph 空间载荷区
-    direction TB
-    杂质电离 --> id2["SRH 复合"]
-    end
-    subgraph 高场强
-    direction TB
-    碰撞电离 --> 载流子迁移率
-    end
-end
-
-subgraph 反向漏电流
-direction TB
-击穿条件 --倍增因子无限大--> 临界场强 --三角形电场分布--> 击穿电压
-击穿条件 --连续性方程--> 临界场强
-击穿条件 --泊松方程--> 临界场强
-end
-
-零偏 --中性区少子扩散--> 正偏 --反向饱和电流密度--> 反向漏电流
-反偏--载荷区的产生--> 反向漏电流
-反偏 --雪崩倍增--> 反向漏电流
-零偏 --中性区多子抽出--> 反偏</pre>
-
-</div>
-
-
-    <div class="post-guide">
-        <div class="item left">
-            
-              <a href="/2023/04/01/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P0-%E6%A6%82%E8%BF%B0/">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  01-03-Part 0 - 概述
-              </a>
-            
-        </div>
-        <div class="item right">
-            
-              <a href="/2023/03/17/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P3-%E5%8F%8D%E5%81%8F/">
-                01-02-Part-3-反偏
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a>
-            
-        </div>
-    </div>
-
-
- 
-
-
-
-<script>
-	
-	
-</script>
 	</div>
 	<div id="footer">
 	<p>
@@ -680,9 +619,6 @@ end
 <script type="text/javascript"> 
 	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 </script>
-
-  <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/9.3.0/mermaid.min.js"></script>
-    </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>
