@@ -411,6 +411,17 @@ var _hmt = _hmt || [];
 									
 							<ul>
 								<li class="file">
+									<a href="/2023/04/20/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E5%A4%A7%E7%BA%B2/">
+                     
+										    02-00-功率半导体器件大纲
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2023/04/16/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
                      
 										    02-00-链接汇总
@@ -586,26 +597,25 @@ var _hmt = _hmt || [];
 <div id="article-content">
 	<p>半导体物理的知识大纲如下图所示：<br />
 <font color=crimson>*如果图片无法显示，请刷新页面</font></p>
-<pre class="mermaid">graph TB
-
+<pre class="mermaid"><code>flowchart TB
     subgraph AA[半导体材料]
     direction TB
-    BB[本征] & CC["p 型"] & DD["n 型"] --> EE[能带图] --> FF[载流子浓度] --> GG[热平衡态] & HH[非平衡态]
-    GG --> II[漂移运动] & JJ[扩散运动] --> KK[输运方程]
-    HH --> LL[产生与复合] --> MM[载流子寿命]
-    FF --> 体电荷密度 --> OO
-    MM & KK & OO[泊松方程] --> NN[连续性方程]
+    BB[本征] &amp; CC[&quot;p 型&quot;] &amp; DD[&quot;n 型&quot;] --&gt; EE[能带图] --&gt; FF[载流子浓度] --&gt; GG[热平衡态] &amp; HH[非平衡态]
+    GG --&gt; II[漂移运动] &amp; JJ[扩散运动] --&gt; KK[输运方程]
+    HH --&gt; LL[产生与复合] --&gt; MM[载流子寿命]
+    FF --&gt; 体电荷密度 --&gt; OO
+    MM &amp; KK &amp; OO[泊松方程] --&gt; NN[连续性方程]
     end
 
     subgraph A[接触类型]
     direction TB
-    B["半导体—半导体"] & C["金属—半导体"] & D["金属—氧化物—半导体"]
-    B --> E["pn 结"]
-    C --> F[肖特基结] & G[欧姆接触]
-    E & F --> I["I-V 特性"]
-    D --> H["MOS 结构"] --> J["C-V 特性"]
+    B[&quot;半导体—半导体&quot;] &amp; C[&quot;金属—半导体&quot;] &amp; D[&quot;金属—氧化物—半导体&quot;]
+    B --&gt; E[&quot;pn 结&quot;]
+    C --&gt; F[肖特基结] &amp; G[欧姆接触]
+    E &amp; F --&gt; I[&quot;I-V 特性&quot;]
+    D --&gt; H[&quot;MOS 结构&quot;] --&gt; J[&quot;C-V 特性&quot;]
     end
-AA --> A</pre>
+AA --&gt; A</code></pre>
 
 </div>
 
@@ -654,9 +664,6 @@ AA --> A</pre>
 <script type="text/javascript"> 
 	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
 </script>
-
-  <script src="https://cdn.bootcdn.net/ajax/libs/mermaid/10.1.0/mermaid.min.js"></script>
-    </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
 </body>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		功率半导体器件大纲 | 
+	 
+	LE-Wiki
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">LE-Wiki</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+    
+    
+
+    
+
+    
+      
+      
+        <li class="menu-item">
+          <a href='https://www.tu-chemnitz.de/etit/le/index.php.en' class="menu-item-link" target="_blank">
+            Professorship of Power Electronics
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://www.infineon.com/cms/en/' class="menu-item-link" target="_blank">
+            Infineon AG
+          </a>
+        </li>
+      
+    
+  
+    
+      <li class="menu-item">
+        <a href='https://github.com/Trivium666' class="menu-item-link" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </li>
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-半导体物理
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E5%A4%A7%E7%BA%B2/">
+                     
+										    01-00-大纲
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    01-00-链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/12/22/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-01-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/12/24/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P1-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/">
+                     
+										    01-01-P1-基础概念
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/01/13/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P2-%E5%B9%B3%E8%A1%A1/">
+                     
+										    01-01-P2-平衡
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/05/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P3-%E9%9D%9E%E5%B9%B3%E8%A1%A1%E8%BD%BD%E6%B5%81%E5%AD%90/">
+                     
+										    01-01-P3-非平衡载流子
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P4-%E6%80%BB%E7%BB%93/">
+                     
+										    01-01-P4-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02-pn结
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/19/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-02-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P1-%E9%9B%B6%E5%81%8F/">
+                     
+										    01-02-P1-零偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/10/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P2-%E6%AD%A3%E5%81%8F/">
+                     
+										    01-02-P2-正偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/17/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P3-%E5%8F%8D%E5%81%8F/">
+                     
+										    01-02-P3-反偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/02-pn%E7%BB%93/01-02-P4-%E6%80%BB%E7%BB%93/">
+                     
+										    01-02-P4-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										03-金属半导体接触
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/01/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-03-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/07/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P1-%E8%82%96%E7%89%B9%E5%9F%BA%E7%BB%93/">
+                     
+										    01-03-P1-肖特基结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/08/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P2-%E6%80%BB%E7%BB%93/">
+                     
+										    01-03-P2-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										04-金属氧化物半导体接触
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/11/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-04-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/11/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P1-%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
+                     
+										    01-04-P1-理想MOS电容
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/15/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P2-%E9%9D%9E%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
+                     
+										    01-04-P2-非理想MOS电容
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P3-%E6%80%BB%E7%BB%93/">
+                     
+										    01-04-P3-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02-功率半导体器件
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2023/04/20/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6%E5%A4%A7%E7%BA%B2/">
+                     
+										    02-00-功率半导体器件大纲
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    02-00-链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06-编程
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/25/06-%E7%BC%96%E7%A8%8B/Python%20%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    Python 链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										07-杂谈
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%B7%A5%E5%8E%82MES%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/">
+                     
+										    半导体工厂MES系统介绍
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                     
+										    博客搭建
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%B8%B8%E7%94%A8%E5%BE%B7%E8%AF%AD%E6%80%BB%E7%BB%93/">
+                     
+										    常用德语总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/12/05/07-%E6%9D%82%E8%B0%88/%E7%A1%95%E5%A3%AB%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E6%80%9D%E8%B7%AF/">
+                     
+										    硕士论文写作思路
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										08-渲染测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/14/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Latex-Test/">
+                     
+										    Latex-Test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/02/21/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Markdown-Test/">
+                     
+										    Markdown-Test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/02/21/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/08/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/%E6%A8%A1%E6%9D%BF/">
+                     
+										    模板
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	功率半导体器件大纲
+</h1>
+<div class="article-meta">
+	
+	<span>Bo Zhang</span>
+	<span>2023-04-20 20:00:57</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+    
+
+    
+		<span>Tags：</span>
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h2 id="1-理想开关-vs-功率半导体器件">1. 理想开关 vs.
+功率半导体器件</h2>
+<p>半导体器件按照应用范围可以分为两大类，分别是：</p>
+<ol type="1">
+<li>集成电路芯片方向的微电子器件</li>
+<li>电力电子方向的<strong>功率半导体器件（Power Semiconductor
+Device）</strong></li>
+</ol>
+<p>我们关注的显然是后者。在电力电子系统中，功率半导体器件通常作为开关，在可控的频率内开关电流，以实现直流和交流电之间的转换。</p>
+<p>理想开关的输出电流电压图如 1-1
+所示。我们希望理想的开关有如下的特点：</p>
+<ul>
+<li><strong>导通状态（Conduction-State）</strong>
+可以流过无穷大的电流，并且没有导通压降</li>
+<li><strong>截止状态（Blocking-State）</strong>
+可以承载无穷大的电压，并且完全阻断电流</li>
+</ul>
+<p align="center">
+<img src="https://i.imgur.com/RsWnpbR.png">
+</p>
+<p align="center">
+图片 1-1：理想开关的输出电流电压波形
+</p>
+<p>通过半导体物理的学习，我们可以推测，对于功率半导体而言，有以下缺点：</p>
+<ul>
+<li>正向电流 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.381ex" height="1.885ex" role="img" focusable="false" viewBox="0 -683 1052.6 833" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-1-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-1-TEX-I-1D43C"></use></g><g data-mml-node="mi" transform="translate(473,-150) scale(0.707)"><use data-c="1D439" xlink:href="#MJX-1-TEX-I-1D439"></use></g></g></g></g></svg></mjx-container> 和反向电压 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.915ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 1288.3 840.8" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-1-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-1-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-1-TEX-I-1D449"></use></g><g data-mml-node="TeXAtom" transform="translate(616,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D44F" xlink:href="#MJX-1-TEX-I-1D44F"></use></g><g data-mml-node="mi" transform="translate(429,0)"><use data-c="1D45F" xlink:href="#MJX-1-TEX-I-1D45F"></use></g></g></g></g></g></svg></mjx-container> 都不能无穷大</li>
+<li>开启后存在正向导通压降 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="2.705ex" height="1.885ex" role="img" focusable="false" viewBox="0 -683 1195.6 833" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-1-TEX-I-1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-1-TEX-I-1D449"></use></g><g data-mml-node="mi" transform="translate(616,-150) scale(0.707)"><use data-c="1D439" xlink:href="#MJX-1-TEX-I-1D439"></use></g></g></g></g></svg></mjx-container>，关断后存在漏电流
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="4.698ex" height="1.902ex" role="img" focusable="false" viewBox="0 -683 2076.5 840.8" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path><path id="MJX-1-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-1-TEX-I-1D452" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><path id="MJX-1-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-1-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D43C" xlink:href="#MJX-1-TEX-I-1D43C"></use></g><g data-mml-node="TeXAtom" transform="translate(473,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-1-TEX-I-1D43F"></use></g><g data-mml-node="mi" transform="translate(681,0)"><use data-c="1D452" xlink:href="#MJX-1-TEX-I-1D452"></use></g><g data-mml-node="mi" transform="translate(1147,0)"><use data-c="1D44E" xlink:href="#MJX-1-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(1676,0)"><use data-c="1D458" xlink:href="#MJX-1-TEX-I-1D458"></use></g></g></g></g></g></svg></mjx-container></li>
+<li>开关的本质其实是载流子的构建以及排出，因此开启和关断需要一定的时间，分别为
+<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.357ex;" xmlns="http://www.w3.org/2000/svg" width="2.74ex" height="1.773ex" role="img" focusable="false" viewBox="0 -626 1211.2 783.8" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-1-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-1-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45C" xlink:href="#MJX-1-TEX-I-1D45C"></use></g><g data-mml-node="mi" transform="translate(485,0)"><use data-c="1D45B" xlink:href="#MJX-1-TEX-I-1D45B"></use></g></g></g></g></g></svg></mjx-container> 和 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.667ex;" xmlns="http://www.w3.org/2000/svg" width="3.54ex" height="2.084ex" role="img" focusable="false" viewBox="0 -626 1564.8 921" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path><path id="MJX-1-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-1-TEX-I-1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D461" xlink:href="#MJX-1-TEX-I-1D461"></use></g><g data-mml-node="TeXAtom" transform="translate(394,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D45C" xlink:href="#MJX-1-TEX-I-1D45C"></use></g><g data-mml-node="mi" transform="translate(485,0)"><use data-c="1D453" xlink:href="#MJX-1-TEX-I-1D453"></use></g><g data-mml-node="mi" transform="translate(1035,0)"><use data-c="1D453" xlink:href="#MJX-1-TEX-I-1D453"></use></g></g></g></g></g></svg></mjx-container></li>
+</ul>
+理想的功率半导体输出波形如图 1-2 所示。<br />
+
+<p align="center">
+<img src="https://i.imgur.com/5VcBVNp.png">
+</p>
+<p align="center">
+图片 1-2：理想半导体器件的输出电流电压波形
+</p>
+<p>这些缺点分别导致了器件的三种损耗，分别是：</p>
+<ul>
+<li>导通损耗</li>
+<li>截止损耗</li>
+<li>开关损耗</li>
+</ul>
+<p>因此，我们学习功率半导体器件的目的就很明确了：</p>
+<ol type="1">
+<li><font color=crimson>理解为什么会有损耗</font></li>
+<li><font color=crimson>明确损耗的分类</font></li>
+<li><font color=crimson>如何减小损耗</font></li>
+</ol>
+<h2 id="2-功率半导体器件的学习思路">2. 功率半导体器件的学习思路</h2>
+<p>当我们在谈论功率半导体器件时，通常从以下几个角度考虑：</p>
+<ul>
+<li>额定功率
+<ul>
+<li>电压等级</li>
+<li>电流等级</li>
+</ul></li>
+<li>开关频率
+<ul>
+<li>导通损耗</li>
+<li>截止损耗</li>
+<li>开关损耗</li>
+</ul></li>
+<li>芯片材料
+<ul>
+<li>Si</li>
+<li>SiC</li>
+<li>GaN</li>
+</ul></li>
+<li>可控/不可控</li>
+</ul>
+<p>功率半导体器件的应用如图所示：</p>
+<p align="center">
+<img src="https://www.infineon.com/export/sites/default/_images/product/power/CoolGaN/Infineon-image-wide-bandgap-semiconductors-Si-SiC-GaN.jpg_1449855181.jpg">
+</p>
+<p align="center">
+图片 2-1：功率半导体器件的应用范围
+</p>
+<p>特别地，现代电力电子系统要求功率半导体器件具备以下特点：</p>
+<ul>
+<li>高功率</li>
+<li>高开关频率</li>
+<li>低损耗</li>
+</ul>
+<p>为此，我们在这部分将讨论以下器件：</p>
+<ul>
+<li>功率二极管（Power Diode）
+<ul>
+<li>pin 二极管(pin-Diode)</li>
+<li>肖特基二极管（Schottky Diode）</li>
+</ul></li>
+<li>MOSFET</li>
+<li>IGBT</li>
+</ul>
+<p>对于每一个器件，我们将从以下几个方面讨论：</p>
+<ul>
+<li>基本结构</li>
+<li>静态特性，即伏安特性</li>
+<li>动态特性，即开关的瞬间，还要额外考虑电路</li>
+<li>损耗</li>
+<li>改善工艺</li>
+</ul>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/04/16/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                功率半导体器件链接汇总
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+ 
+
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">Bo Zhang</a> 
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
