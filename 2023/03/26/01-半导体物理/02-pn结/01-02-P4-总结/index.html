@@ -595,43 +595,10 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p>本篇对 pn 结所有的知识点做一个串联，如下图所示：<br />
-<font color=crimson>*如果图片无法显示，请刷新页面</font></p>
-<pre class="mermaid">flowchart TB
-
-subgraph 零偏
-direction TB
-中性区多子扩散 --> 空间载荷区形成 --"pn 结能带图"--> 内建电压 --> 空间载荷区宽度
-end
-
-subgraph 正偏
-direction TB
-少子浓度 --> 少子电流密度 --> id["理想 V-I 特性"]
-end
-
-subgraph 反偏
-direction TB
-    subgraph 空间载荷区
-    direction TB
-    杂质电离 --> id2["SRH 复合"]
-    end
-    subgraph 高场强
-    direction TB
-    碰撞电离 --> 载流子迁移率
-    end
-end
-
-subgraph 反向漏电流
-direction TB
-击穿条件 --倍增因子无限大--> 临界场强 --三角形电场分布--> 击穿电压
-击穿条件 --连续性方程--> 临界场强
-击穿条件 --泊松方程--> 临界场强
-end
-
-零偏 --中性区少子扩散--> 正偏 --反向饱和电流密度--> 反向漏电流
-反偏--载荷区的产生--> 反向漏电流
-反偏 --雪崩倍增--> 反向漏电流
-零偏 --中性区多子抽出--> 反偏</pre>
+	<p>本篇对 pn 结所有的知识点做一个串联，如下图所示：</p>
+<p align="center">
+<img src="https://i.imgur.com/9jXeay2.png">
+</p>
 
 </div>
 
