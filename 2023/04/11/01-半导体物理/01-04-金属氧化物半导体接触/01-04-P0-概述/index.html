@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		01-04-Part-0-概述 | 
+	 
+	LE-Wiki
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "https://www.google.com/search?q=";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
+
+	
+	
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3efe99c287df5a1d6f0d02d187e403c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<header id="header">
+    <a id="title" href="/" class="logo">LE-Wiki</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+    
+    
+
+    
+
+    
+      
+      
+        <li class="menu-item">
+          <a href='https://www.tu-chemnitz.de/etit/le/index.php.en' class="menu-item-link" target="_blank">
+            Professorship of Power Electronics
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a href='https://www.infineon.com/cms/en/' class="menu-item-link" target="_blank">
+            Infineon AG
+          </a>
+        </li>
+      
+    
+  
+    
+      <li class="menu-item">
+        <a href='https://github.com/Trivium666' class="menu-item-link" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </li>
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="按回车全站搜索">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-半导体物理
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E5%A4%A7%E7%BA%B2/">
+                     
+										    01-00-大纲
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    01-00-链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-01-基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2022/12/22/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-01-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/12/24/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P1-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/">
+                     
+										    01-01-P1-基础概念
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/01/13/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P2-%E5%B9%B3%E8%A1%A1%E8%BD%BD%E6%B5%81%E5%AD%90/">
+                     
+										    01-01-P2-平衡载流子
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/05/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P3-%E9%9D%9E%E5%B9%B3%E8%A1%A1%E8%BD%BD%E6%B5%81%E5%AD%90/">
+                     
+										    01-01-P3-非平衡载流子
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-01-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/01-01-P4-%E6%80%BB%E7%BB%93/">
+                     
+										    01-01-P4-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-02-pn结
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/19/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-02-pn%E7%BB%93/01-02-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-02-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-02-pn%E7%BB%93/01-02-P1-%E9%9B%B6%E5%81%8F/">
+                     
+										    01-02-P1-零偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/10/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-02-pn%E7%BB%93/01-02-P2-%E6%AD%A3%E5%81%8F/">
+                     
+										    01-02-P2-正偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/17/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-02-pn%E7%BB%93/01-02-P3-%E5%8F%8D%E5%81%8F/">
+                     
+										    01-02-P3-反偏
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/03/26/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-02-pn%E7%BB%93/01-02-P4-%E6%80%BB%E7%BB%93/">
+                     
+										    01-02-P4-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-03-金属半导体接触
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/01/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-03-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/07/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P1-%E8%82%96%E7%89%B9%E5%9F%BA%E7%BB%93/">
+                     
+										    01-03-P1-肖特基结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/08/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-03-%E9%87%91%E5%B1%9E%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-03-P2-%E6%80%BB%E7%BB%93/">
+                     
+										    01-03-P2-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										01-04-金属氧化物半导体接触
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2023/04/11/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    01-04-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/11/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P1-%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
+                     
+										    01-04-P1-理想MOS电容
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/15/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P2-%E9%9D%9E%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
+                     
+										    01-04-P2-非理想MOS电容
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P3-%E6%80%BB%E7%BB%93/">
+                     
+										    01-04-P3-总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02-功率半导体器件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/04/20/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E5%A4%A7%E7%BA%B2/">
+                     
+										    02-00-大纲
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/16/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-00-%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    02-00-链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										02-01-pin二极管
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/05/01/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-01-pin%E4%BA%8C%E6%9E%81%E7%AE%A1/02-01-P0-%E6%A6%82%E8%BF%B0/">
+                     
+										    02-01-P0-概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/05/01/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-01-pin%E4%BA%8C%E6%9E%81%E7%AE%A1/02-01-P1-%E5%8F%8D%E5%90%91%E9%9D%99%E6%80%81%E7%89%B9%E6%80%A7/">
+                     
+										    02-01-P1-反向静态特性
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/05/27/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-01-pin%E4%BA%8C%E6%9E%81%E7%AE%A1/02-01-P2-%E6%AD%A3%E5%90%91%E9%9D%99%E6%80%81%E7%89%B9%E6%80%A7/">
+                     
+										    02-01-P2-正向静态特性
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/05/01/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-01-pin%E4%BA%8C%E6%9E%81%E7%AE%A1/02-01-P3-%E6%B8%A9%E5%BA%A6%E5%AF%B9%E9%9D%99%E6%80%81%E7%89%B9%E6%80%A7%E7%9A%84%E5%BD%B1%E5%93%8D/">
+                     
+										    02-01-P3-温度对静态特性的影响
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/05/01/02-%E5%8A%9F%E7%8E%87%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%99%A8%E4%BB%B6/02-01-pin%E4%BA%8C%E6%9E%81%E7%AE%A1/02-01-P4-%E5%8A%A8%E6%80%81%E7%89%B9%E6%80%A7/">
+                     
+										    02-01-P4-动态特性
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										06-编程
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/25/06-%E7%BC%96%E7%A8%8B/Python%20%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/">
+                     
+										    Python 链接汇总
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										07-杂谈
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%8D%8A%E5%AF%BC%E4%BD%93%E5%B7%A5%E5%8E%82MES%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/">
+                     
+										    半导体工厂MES系统介绍
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                     
+										    博客搭建
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/02/17/07-%E6%9D%82%E8%B0%88/%E5%B8%B8%E7%94%A8%E5%BE%B7%E8%AF%AD%E6%80%BB%E7%BB%93/">
+                     
+										    常用德语总结
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/12/05/07-%E6%9D%82%E8%B0%88/%E7%A1%95%E5%A3%AB%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E6%80%9D%E8%B7%AF/">
+                     
+										    硕士论文写作思路
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										08-渲染测试
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2023/02/14/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Latex-Test/">
+                     
+										    Latex-Test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/02/21/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/Markdown-Test/">
+                     
+										    Markdown-Test
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2021/02/21/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/hello-world/">
+                     
+										    hello-world
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2023/04/08/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/%E6%A8%A1%E6%9D%BF/">
+                     
+										    模板
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+	01-04-Part-0-概述
+</h1>
+<div class="article-meta">
+	
+	<span>Bo Zhang</span>
+	<span>2023-04-11 16:49:40</span>
+		<div id="article-categories">
+    
+		<span>Categories：</span>
+            
+    
+
+    
+		<span>Tags：</span>
+            
+    
+		</div>
+
+</div>
+
+<div id="article-content">
+	<h2 id="1-序言">1. 序言</h2>
+<p>在这一部分，我们要考虑一种新的接触：<strong>金属（Metal）氧化物（Oxide）半导体（Semiconductor）</strong>接触。分别取三种材料的首字母，金属氧化物半导体结构就被简称为
+MOS 结构。由于金属和半导体被作为绝缘体的氧化物隔绝开来， MOS
+结构可以等效一个电容。因此，我们可以得出 MOS 结构和 pn
+结以及肖特基结最大的不同之处：</p>
+<ul>
+<li>pn 结和肖特基结存在电流，我们研究的是 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="5.646ex" height="1.731ex" role="img" focusable="false" viewBox="0 -683 2495.4 765" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-10-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path id="MJX-10-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-10-TEX-I-1D43C" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D449" xlink:href="#MJX-10-TEX-I-1D449"></use></g><g data-mml-node="mo" transform="translate(991.2,0)"><use data-c="2212" xlink:href="#MJX-10-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(1991.4,0)"><use data-c="1D43C" xlink:href="#MJX-10-TEX-I-1D43C"></use></g></g></g></svg></mjx-container> 特性</li>
+<li>MOS 结构不存在电流，取而代之的是研究 <mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="6.225ex" height="1.781ex" role="img" focusable="false" viewBox="0 -705 2751.4 787" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-10-TEX-I-1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path><path id="MJX-10-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-10-TEX-I-1D449" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D436" xlink:href="#MJX-10-TEX-I-1D436"></use></g><g data-mml-node="mo" transform="translate(982.2,0)"><use data-c="2212" xlink:href="#MJX-10-TEX-N-2212"></use></g><g data-mml-node="mi" transform="translate(1982.4,0)"><use data-c="1D449" xlink:href="#MJX-10-TEX-I-1D449"></use></g></g></g></svg></mjx-container> 特性</li>
+</ul>
+<p>我们将分别讨论 MOS 结构在理想和非理想情况下的 C-V
+特性，以此引出以下概念：</p>
+<ul>
+<li>表面态</li>
+<li>表面效应</li>
+<li>表面势</li>
+<li>表面场强</li>
+<li>表面电荷</li>
+<li>德拜长度</li>
+<li>平带电压</li>
+<li>反型层</li>
+<li>阈值电压</li>
+<li>氧化物缺陷</li>
+<li>...</li>
+</ul>
+<h2 id="2-学习方法">2. 学习方法</h2>
+<p>MOS 结构的学习要把握三点：</p>
+<ul>
+<li>理解氧化物—半导体接触的表面态</li>
+<li>明确各种表面势对应的能带图</li>
+<li>理解反型层出现的原因</li>
+<li>理解阈值电压的概念</li>
+<li>明确不同频率的交流信号所测量的 C-V 曲线的不同</li>
+<li>明确非理想因素导致的实际 C-V 曲线和理想情况下的不同</li>
+</ul>
+<h2 id="3-内容框架">3. 内容框架</h2>
+<p>金属氧化物半导体接触的知识将分为两部分，分别讨论理想和非理想状况下的
+C-V 特性。</p>
+<p>后续的讨论全部基于以下三点：</p>
+<ol type="1">
+<li><font color=crimson>电场的正方向为正电荷指向负电荷</font></li>
+<li>半导体掺杂为 <font color=crimson>p 型</font>，空穴为多子</li>
+<li>由于半导体一侧没有电流，因此<font color=crimson>半导体体内（Bulk）的电势为零，且其费米能级不随外部电压的改变而改变</font></li>
+</ol>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2023/04/11/01-%E5%8D%8A%E5%AF%BC%E4%BD%93%E7%89%A9%E7%90%86/01-04-%E9%87%91%E5%B1%9E%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%AF%BC%E4%BD%93%E6%8E%A5%E8%A7%A6/01-04-P1-%E7%90%86%E6%83%B3MOS%E7%94%B5%E5%AE%B9/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  01-04-Part-1-理想 MOS 电容
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2023/04/08/08-%E6%B8%B2%E6%9F%93%E6%B5%8B%E8%AF%95/%E6%A8%A1%E6%9D%BF/">
+                模板
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+ 
+
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">Bo Zhang</a> 
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
